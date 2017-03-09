@@ -5,7 +5,7 @@
   users:
     'ubuntu':
       comment: 'Ubuntu'
-      uid: '1010'
+      uid: '1000'
       sshkeys:
         - "%{hiera('sshkeys.john')}"
         - "%{hiera('sshkeys.dzmitry')}"
