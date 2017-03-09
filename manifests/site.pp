@@ -15,6 +15,6 @@
 #https://docs.puppet.com/pe/2015.3/release_notes.html#filebucket-resource-no-longer-created-by-default
 File { backup => false }
 
-node 'demo' {
-  include role::demo
+node 'john-play' {
+  include profile::common
 }
