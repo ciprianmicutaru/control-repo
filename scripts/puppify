@@ -14,8 +14,8 @@ HOSTNAME=${2}
 BRANCH=${3:-production}
 OPTIONS="-oStrictHostKeyChecking=no"
 echo -n "Copying bootstrap script... "
-scp ${OPTIONS} $(dirname $0)/bootstrap.sh ubuntu@${TARGET}:/tmp
+scp ${OPTIONS} $(dirname $0)/bootstrap.sh root@${TARGET}:/tmp
 echo "done."
 echo -n "Bootstrapping... "
-ssh ${OPTIONS} ubuntu@${TARGET} "sudo bash /tmp/bootstrap.sh ${PUPPET_REPO} ${HOSTNAME} ${BRANCH}"
+ssh ${OPTIONS} root@${TARGET} "sudo bash /tmp/bootstrap.sh ${PUPPET_REPO} ${HOSTNAME} ${BRANCH}"
 echo "done."
