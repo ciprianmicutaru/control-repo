@@ -15,6 +15,6 @@
 #https://docs.puppet.com/pe/2015.3/release_notes.html#filebucket-resource-no-longer-created-by-default
 File { backup => false }
 
-node 'john-play' {
+node 'hypersocket' {
   include profile::common
 }
