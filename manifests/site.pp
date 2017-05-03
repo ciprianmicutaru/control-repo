@@ -16,5 +16,5 @@
 File { backup => false }
 
 node 'hypersocket' {
-  include profile::common
+  include role::hypersocket
 }
