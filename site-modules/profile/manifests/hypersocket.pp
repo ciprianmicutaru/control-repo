@@ -1,5 +1,7 @@
 # Install Hypersocket Prime
 class profile::hypersocket {
+  include java
+
   archive { '/tmp/hypersocket.deb':
     source  => hiera('hypersocket::deb_url'),
     extract => false,
