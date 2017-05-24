@@ -1,14 +1,12 @@
 ---
   sshkeys:
     'john': 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEA3ATqENg+GWACa2BzeqTdGnJhNoBer8x6pfWkzNzeM8Zx7/2Tf2pl7kHdbsiTXEUawqzXZQtZzt/j3Oya+PZjcRpWNRzprSmd2UxEEPTqDw9LqY5S2B8og/NyzWaIYPsKoatcgC7VgYHplcTbzEhGu8BsoEVBGYu3IRy5RkAcZik= john@susie'
-    'dzmitry': 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+Eyu0DsF/GfXag5O36fLuMF4Oqyqo2GGBMeZsPrMbYQ6HTr8iqrrrdVBExG0RontZpckXFLqQD2YeVlYFXufwfxYdgucvgER205T4YfSU3oqeEqNCe/Z+F3wmvQhUoGRELp1j141JSF3LTMpgbPKxngxoyMC/VXfA3Dg9I32EgRfMlClNjyH5Jn/uAseKMPHebXIylQ28qMg/WnvLC2fsfyA4qe5oKxjK2WJjaqrlemw4SNAtgX7Y8+jzQXlXQQOZEYgsD+9VrrYAtbHcrCfN+yGiNqkGVVII9Hxg5Gbpxixbi6B2Qi9tzO9O28K08U64WuHAN5RZn10rYYuhR3gl dzmitry.kovalenok@thehamon.com'
   users:
     'ubuntu':
       comment: 'Ubuntu'
       uid: '1000'
       sshkeys:
         - "%{hiera('sshkeys.john')}"
-        - "%{hiera('sshkeys.dzmitry')}"
   allow_users:
     - 'ubuntu'
     - 'vagrant'
