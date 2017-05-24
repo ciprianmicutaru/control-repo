@@ -1,7 +1,6 @@
 ---
   sshkeys:
     'john': 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEA3ATqENg+GWACa2BzeqTdGnJhNoBer8x6pfWkzNzeM8Zx7/2Tf2pl7kHdbsiTXEUawqzXZQtZzt/j3Oya+PZjcRpWNRzprSmd2UxEEPTqDw9LqY5S2B8og/NyzWaIYPsKoatcgC7VgYHplcTbzEhGu8BsoEVBGYu3IRy5RkAcZik= john@susie'
-    'dzmitry': 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+Eyu0DsF/GfXag5O36fLuMF4Oqyqo2GGBMeZsPrMbYQ6HTr8iqrrrdVBExG0RontZpckXFLqQD2YeVlYFXufwfxYdgucvgER205T4YfSU3oqeEqNCe/Z+F3wmvQhUoGRELp1j141JSF3LTMpgbPKxngxoyMC/VXfA3Dg9I32EgRfMlClNjyH5Jn/uAseKMPHebXIylQ28qMg/WnvLC2fsfyA4qe5oKxjK2WJjaqrlemw4SNAtgX7Y8+jzQXlXQQOZEYgsD+9VrrYAtbHcrCfN+yGiNqkGVVII9Hxg5Gbpxixbi6B2Qi9tzO9O28K08U64WuHAN5RZn10rYYuhR3gl dzmitry.kovalenok@thehamon.com'
     'ciprian': 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEApIJlY62QLRzk1GOaJDNwnPW3FSJsa6wiJLk23sy/TldK25+qaayN8RZKjn5T+QK5yK0tYmPKrEN5cEWv3TKiEfpkeAKu7EoH+iN0EnLyrRMTjIR5SpDwMFy1BcUjE62mqjCaojjaMhcg9CAYm8fw20wSwzW5deNSoEO5EMn258oTgk9m0BB/mG6cYKKhRn3/lAePfvmhoC4TwAehjBUgeTZeuzsBmxzONpbU0YWTtCymWOcNtqrKwajlBSihVM9/qTDge2vehEfp1dcAr/Id8AaYuwe9S/ee7oMmFoanW4UngSvgnM65hVcPudublzBfDKtciJlfSL6dXXnqmUAQ8Q== rsa-key-20170511'
   users:
     'ubuntu':
@@ -9,7 +8,7 @@
       uid: '1000'
       sshkeys:
         - "%{hiera('sshkeys.john')}"
-        - "%{hiera('sshkeys.dzmitry')}"
+        - "%{hiera('sshkeys.ciprian')}"
   allow_users:
     - 'ubuntu'
     - 'vagrant'
