@@ -18,3 +18,7 @@ File { backup => false }
 node 'hypersocket' {
   include role::hypersocket
 }
+
+node 'testserver' {
+  include profile::common
+}
