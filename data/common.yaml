@@ -1,7 +1,7 @@
 ---
   sshkeys:
     'john': 'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEA3ATqENg+GWACa2BzeqTdGnJhNoBer8x6pfWkzNzeM8Zx7/2Tf2pl7kHdbsiTXEUawqzXZQtZzt/j3Oya+PZjcRpWNRzprSmd2UxEEPTqDw9LqY5S2B8og/NyzWaIYPsKoatcgC7VgYHplcTbzEhGu8BsoEVBGYu3IRy5RkAcZik= john@susie'
-    'ciprian': 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEApIJlY62QLRzk1GOaJDNwnPW3FSJsa6wiJLk23sy/TldK25+qaayN8RZKjn5T+QK5yK0tYmPKrEN5cEWv3TKiEfpkeAKu7EoH+iN0EnLyrRMTjIR5SpDwMFy1BcUjE62mqjCaojjaMhcg9CAYm8fw20wSwzW5deNSoEO5EMn258oTgk9m0BB/mG6cYKKhRn3/lAePfvmhoC4TwAehjBUgeTZeuzsBmxzONpbU0YWTtCymWOcNtqrKwajlBSihVM9/qTDge2vehEfp1dcAr/Id8AaYuwe9S/ee7oMmFoanW4UngSvgnM65hVcPudublzBfDKtciJlfSL6dXXnqmUAQ8Q== rsa-key-20170511'
+    'ciprian': 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAkfN3yG+yrpFhraXtdQI77F3OWeuVzNBUp9SDoqPJN9Uv5SgfjXWAJ/5edmurIhTUCBN23l94VbHDwzK5/N15yQe86wjYeeJI3VrXZjN+hKJMgWTOAW8IH+YFVg4aej2ubjBVHeTP9AIQg4naTEUkrEC83L+mBQnyXY+X8qITqRmCpIJRutPJcNeYrs0kdnBfKpeOx2DOn333F093IS+Kov/Q2QpF67lZ43BGRgurPAZZWBk/y1TWVeDerXWcoi0b4jxEpWPRcOyA4iu27sBIrcz5gmRoBaJNyxf/ZIfAq3KRE7eg8Mk9qkNc4GxlnJ2RCiK+zQ7qxFUPPy/grf71uw== rsa-key-20170524'
   users:
     'ubuntu':
       comment: 'Ubuntu'
